@@ -1,5 +1,5 @@
 <?php
-namespace Asset;
+namespace Boxspaced\CmsAssetModule;
 
 use Zend\Router\Http\Segment;
 use Zend\Permissions\Acl\Acl;

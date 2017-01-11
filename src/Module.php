@@ -1,5 +1,5 @@
 <?php
-namespace Asset;
+namespace Boxspaced\CmsAssetModule;
 
 class Module
 {

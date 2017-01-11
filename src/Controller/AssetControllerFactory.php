@@ -1,11 +1,11 @@
 <?php
-namespace Asset\Controller;
+namespace Boxspaced\CmsAssetModule\Controller;
 
 use Zend\ServiceManager\Factory\FactoryInterface;
 use Interop\Container\ContainerInterface;
-use Asset\Controller\AssetController;
+use Boxspaced\CmsAssetModule\Controller\AssetController;
 use Zend\Log\Logger;
-use Core\Controller\AbstractControllerFactory;
+use Boxspaced\CmsCoreModule\Controller\AbstractControllerFactory;
 
 class AssetControllerFactory extends AbstractControllerFactory implements FactoryInterface
 {

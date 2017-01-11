@@ -1,5 +1,5 @@
 <?php
-namespace Asset\Exception;
+namespace Boxspaced\CmsAssetModule\Exception;
 
 class InvalidArgumentException extends \InvalidArgumentException implements ExceptionInterface
 {
