@@ -59,7 +59,7 @@ class AssetController extends AbstractActionController
     {
         $adminNavigation = $this->adminNavigationWidget();
         if (null !== $adminNavigation) {
-            $this->view->addChild($adminNavigation, 'adminNavigation');
+            $this->layout()->addChild($adminNavigation, 'adminNavigation');
         }
 
         return $this->view;
