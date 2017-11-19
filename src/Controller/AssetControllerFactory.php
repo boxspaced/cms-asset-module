@@ -5,19 +5,16 @@ use Zend\ServiceManager\Factory\FactoryInterface;
 use Interop\Container\ContainerInterface;
 use Boxspaced\CmsAssetModule\Controller\AssetController;
 use Zend\Log\Logger;
-use Boxspaced\CmsCoreModule\Controller\AbstractControllerFactory;
 
-class AssetControllerFactory extends AbstractControllerFactory implements FactoryInterface
+class AssetControllerFactory implements FactoryInterface
 {
 
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
-        $controller = new AssetController(
+        return new AssetController(
             $container->get(Logger::class),
             $container->get('config')
         );
-
-        return $this->forceHttps($controller, $container);
     }
 
 }
